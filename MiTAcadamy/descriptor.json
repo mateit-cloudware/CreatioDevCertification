@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "cae99c79-fa8f-6024-f539-d7b40e12e077",
+    "Name": "MiTAcadamy",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1713019368000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/MiTAcadamy.csproj",
+    "DependsOn": [
+      {
+        "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
+        "PackageVersion": "7.8.0",
+        "Name": "Studio"
+      }
+    ]
+  }
+}
