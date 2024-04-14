@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "1ffd812c-7b4c-1be3-db9e-5ea2871b48dd",
+    "Name": "DevCert",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1713081067000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/DevCert.csproj",
+    "DependsOn": [
+      {
+        "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
+        "PackageVersion": "7.8.0",
+        "Name": "Studio"
+      }
+    ]
+  }
+}
