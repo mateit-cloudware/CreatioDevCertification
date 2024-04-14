@@ -316,6 +316,11 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="UsrRealty">
+			<HintPath>$(RelativePkgFolderPath)/UsrRealty/$(StandalonePackageAssemblyPath)/UsrRealty.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtBaseConsts">
 			<HintPath>$(RelativePkgFolderPath)/CrtBaseConsts/$(StandalonePackageAssemblyPath)/CrtBaseConsts.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -479,7 +484,6 @@
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
-		<Compile Remove="$(RelativePkgFolderPath)/DevCert/Schemas/UsrCertRealty/UsrCertRealty.cs" Condition="Exists('$(RelativePkgFolderPath)/DevCert/Schemas/UsrCertRealty/UsrCertRealty.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/DevCert/Schemas/UsrRealtyOfferType/UsrRealtyOfferType.cs" Condition="Exists('$(RelativePkgFolderPath)/DevCert/Schemas/UsrRealtyOfferType/UsrRealtyOfferType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/DevCert/Schemas/UsrRealtyType/UsrRealtyType.cs" Condition="Exists('$(RelativePkgFolderPath)/DevCert/Schemas/UsrRealtyType/UsrRealtyType.cs')" />
 	</ItemGroup>

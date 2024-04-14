@@ -5,6 +5,18 @@
 			<Item Name="Caption" Value="Realty form page" />
 			<Item Name="LocalizableStrings.addRecord_8k1o1aj_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_olpy8an_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area cannot be 0" />
+			<Item Name="LocalizableStrings.Button_ji2gg2f_caption.Value" Value="Action" />
+			<Item Name="LocalizableStrings.ExpansionPanel_va4bnto_title.Value" Value="Visits" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_a7cvvl4_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_ucvef0f_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_9uho46y_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_ciqlgt1_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_6g47wcy_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_a9stxdh_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_a2t911x_caption.Value" Value="Run Web Service" />
+			<Item Name="LocalizableStrings.NumberInput_af8aj9i_label.Value" Value="Number" />
+			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be 0" />
 		</Items>
 	</Group>
 </Resources>

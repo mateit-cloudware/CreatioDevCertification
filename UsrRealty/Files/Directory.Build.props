@@ -3,5 +3,6 @@
 		<Compile Include="$(PkgPath)/UsrRealty/Schemas/UsrRealty/UsrRealty.cs" Condition="Exists('$(PkgPath)/UsrRealty/Schemas/UsrRealty/UsrRealty.cs')" />
 		<Compile Include="$(PkgPath)/UsrRealty/Schemas/UsrRealtyOfferTypeFreedomUI/UsrRealtyOfferTypeFreedomUI.cs" Condition="Exists('$(PkgPath)/UsrRealty/Schemas/UsrRealtyOfferTypeFreedomUI/UsrRealtyOfferTypeFreedomUI.cs')" />
 		<Compile Include="$(PkgPath)/UsrRealty/Schemas/UsrRealtyTypeFreedomUI/UsrRealtyTypeFreedomUI.cs" Condition="Exists('$(PkgPath)/UsrRealty/Schemas/UsrRealtyTypeFreedomUI/UsrRealtyTypeFreedomUI.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealty/Schemas/UsrRealtyVisit/UsrRealtyVisit.cs" Condition="Exists('$(PkgPath)/UsrRealty/Schemas/UsrRealtyVisit/UsrRealtyVisit.cs')" />
 	</ItemGroup>
 </Project>
