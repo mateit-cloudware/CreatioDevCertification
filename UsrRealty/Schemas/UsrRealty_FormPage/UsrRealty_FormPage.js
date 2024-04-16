@@ -599,6 +599,13 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					"PDS_UsrComment_l8j7d67": {
 						"modelConfig": {
 							"path": "PDS.UsrComment"
+						},
+						/* The property that enables validators in the attribute. */
+						"validators": {
+							/* Flag the field as required. */
+							"required": {
+								"type": "crt.Required"
+							}
 						}
 					},
 					"PDS_UsrCommissionUSD_q7vuk6f": {
@@ -774,6 +781,25 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					
 					this.console.log("response min price = " + response.body.GetMinPriceByTypeIdResult);
 					
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+					if (request.attributeName === 'PDS_UsrPriceUSD_jii7lt6') {
+						const newPrice = await request.$context.PDS_UsrPriceUSD_jii7lt6;
+						/* Check if the new price is greater than or equal to 10,000 USD. */
+						if (newPrice >= 10000) {
+							/* If the price is 10,000 or more, apply the required validator to the UsrComment attribute. */
+							request.$context.enableAttributeValidator('PDS_UsrComment_l8j7d67', 'required');
+						} else {
+							/* If the price is less than 10,000 USD, disable the required validator for the UsrComment attribute. */
+							request.$context.disableAttributeValidator('PDS_UsrComment_l8j7d67', 'required');
+						}
+					}
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
